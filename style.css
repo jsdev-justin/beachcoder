@@ -11,6 +11,7 @@ body{
 .app{
     height:100vh;
     width:100vw;
+    display:flex;
 }
 
 .header{
@@ -25,7 +26,7 @@ body{
     position:absolute;
     text-align:center;
     text-shadow:1px 1px 3px green;
-    font-size:45px;
+    /* font-size:45px; */
     letter-spacing:3px;
     text-transform:uppercase;
 
@@ -125,7 +126,7 @@ a{
     overflow:hidden;
     transition:max-height 1s ease-out;
     /* border:1px solid red; */
-    height:100px;
+    height:75px;
     /* flex-direction:column;
     align-items:center;
     justify-content:space-evenly;
@@ -136,7 +137,7 @@ a{
     height:0px;
     width:0px;
     /* position:absolute; */
-    transition:1s ease;
+    transition:1s ease-out;
     text-align:center;
     overflow:auto;
 }
@@ -145,6 +146,7 @@ a{
 .main-col{
     width:70%;
     height:100%;
+    /* overflow:auto; */
 }
 
 .burger-menu{
@@ -153,9 +155,6 @@ a{
     /* border:1px solid red; */
 
 }
-
-
-
 
 
 
@@ -197,6 +196,31 @@ a{
 
 .row{
     margin:10px;
+}
+
+
+@media screen and (max-width:400px){
+    .app{
+        display:flex;
+        flex-direction:column;
+    }
+
+    /* .h1-header{
+        color:red;
+    } */
+
+    .main-col{
+        width:100%;
+        height:70%;
+    }
+
+    .link-col{
+        width:100%;
+        overflow:auto;
+        display:flex;
+        align-items:center;
+        justify-content: space-evenly;
+    }
 }
 
 

@@ -18,6 +18,6 @@ burger.onclick=()=>{
     if (menu.style.maxHeight){
       menu.style.maxHeight = null;
     } else {
-      menu.style.maxHeight = '200px';
+      menu.style.maxHeight = "100px";
     }
 }
